@@ -37,7 +37,7 @@ class Response extends AbstractResponse {
 				return "Insufficient funds on the card";
 				break;
 			case "avs":
-				return "The address entered does not match the billing address on file at the bank";
+				return "The address verification process failed";
 				break;
 			case "expiredcard":
 				return "The card has expired";
