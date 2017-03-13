@@ -1,0 +1,29 @@
+{
+    "name": "omnipay/trustcommerce",
+    "type": "library",
+    "description": "TrustCommerce driver for the Omnipay payment processing library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "stripe"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jon Strong",
+            "email": "jstrong@bluemesh.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Omnipay\\TrustCommerce\\" : "src/" }
+    },
+    "require": {
+        "omnipay/common": "~2.0"
+    },
+    "require-dev": {
+        "omnipay/tests": "~2.0"
+    }
+}
