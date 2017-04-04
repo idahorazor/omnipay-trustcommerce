@@ -17,6 +17,7 @@ class AuthorizeRequest extends AbstractRequest {
 		//add credit card details
 		$data['cc'] = $this->getCard()->getNumber();
 		$data['exp'] = $this->getCard()->getExpiryDate('my');
+		$data['name'] = $this->getCard()->getFirstName() . " " . $this->getCard()->getLastName();
 		$data['address1'] = $this->getCard()->getAddress1();
 		$data['zip'] = $this->getCard()->getPostcode();
 		$data['cvv'] = $this->getCard()->getCvv();
