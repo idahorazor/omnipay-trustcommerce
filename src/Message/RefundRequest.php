@@ -8,6 +8,7 @@ class RefundRequest extends AbstractRequest {
 	public function getData() {
 		$data = $this->getBaseData();
 		$data['amount'] = $this->getAmountInteger();
+		$data['name'] = $this->getCard()->getFirstName() . " " . $this->getCard()->getLastName();
 		if($this->getTransactionReference() != "") {
 			$data['action'] = 'credit';
 			$data['transid'] = $this->getTransactionReference();
